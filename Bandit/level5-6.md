@@ -9,4 +9,4 @@ SOLUTION:
 
 - Execute `find . -size 1033c`. This will output a file
 - You can execute `ls -al <filename>` to check if file is a non-executable  
-- `file <filename> will tell you if file is ASCII or text which makes it human-readable 
+- `file <filename>` will tell you if file is ASCII or text which makes it human-readable 
