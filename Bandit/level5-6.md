@@ -24,5 +24,5 @@ II
 
 - You can simply execute `find . -size 1033c -exec file -- {} \; | grep ASCII`
 - 'c' in 1033c refers to bytes (check man find)
-- '-exec' and '\;' are used because '-exec <command>' is used to run the <command> such that all following arguments to find are taken as arguments to <command> until ';' is encountered. ';' needs to be escaped with '\'
+- '-exec' and '\;' are used because '-exec <command>' is used to run the <command> such that all following arguments to find are taken as arguments to <command> until ';' is encountered. ';' needs to be escaped with '\' so that shell you run find inside does not treat ';' as its own special character (this special character is used for separating different commands)
 - {} is replaced by current file name being processed 
