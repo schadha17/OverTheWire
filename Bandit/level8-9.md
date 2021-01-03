@@ -14,7 +14,7 @@ Oh no! we see a bunch of lines
 
 'uniq' does not detect repeated lines unless they are adjacent. Lets sort the file first so repeated lines are adjacent (`sort data.txt`)
 
-Now, we need to redirect output from `sort data.txt` to `uniq -u`. This is where '|' comes into play 
+Now, we need to redirect output from `sort data.txt` to input of `uniq -u`. This is where '|' comes into play 
 
 `sort data.txt | uniq -u` gets you the answer
 
